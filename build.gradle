@@ -13,3 +13,5 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-js"
     testCompile "org.jetbrains.kotlin:kotlin-test-js"
 }
+
+apply plugin: 'kotlin-dce-js'
