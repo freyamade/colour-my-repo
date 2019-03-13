@@ -10,8 +10,8 @@
   "content_scripts": [
     {
       "js": [
-        "build/classes/kotlin/main/min/kotlin.js",
-        "build/classes/kotlin/main/min/content_script.js"
+        "build/kotlin-js-min/main/kotlin.js",
+        "build/kotlin-js-min/main/colour-my-repo.js"
       ],
       "matches": [
         "https://github.com/*"
