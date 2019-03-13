@@ -8,7 +8,7 @@ fun main() {
     var location = window.location.pathname.substring(1).split("/")
     if (location.size == 2) {
         window.setTimeout(
-            fun() { render() },
+            ::render,
             1000
         )
     }
