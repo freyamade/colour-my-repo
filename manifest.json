@@ -5,8 +5,6 @@
     }
   },
   "author": "freyamade",
-  "background": {},
-  "browser_action": {},
   "content_scripts": [
     {
       "js": [
@@ -22,11 +20,6 @@
   "icons": {},
   "manifest_version": 2,
   "name": "Colour My Repo",
-  "permissions": [
-    "https://api.github.com/",
-    "storage",
-    "tabs"
-  ],
   "short_name": "colour-my-repo",
   "version": "0.0.0"
 }
