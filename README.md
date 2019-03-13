@@ -1,5 +1,6 @@
 # colour-my-repo
-A simple browser extension that adds some SHA based colouring to GitHub repositories.
+A plain and simple browser extension that adds a little splash of SHA-based colour to any repo on GitHub
 
-## Notes
-I should use webpack to further minify code and also move it from build/ to a dist/ folder for zipping it up and uploading it
+![example image](https://raw.githubusercontent.com/freyamade/colour-my-repo/master/img/demo.png)
+
+***Still in progress, will be released soon***
