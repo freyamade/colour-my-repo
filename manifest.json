@@ -1,0 +1,32 @@
+{
+  "applications": {
+    "gecko": {
+      "id": "colour-my-repo@freyama.de"
+    }
+  },
+  "author": "freyamade",
+  "background": {},
+  "browser_action": {},
+  "content_scripts": [
+    {
+      "js": [
+        "build/classes/kotlin/main/min/kotlin.js",
+        "build/classes/kotlin/main/min/content_script.js"
+      ],
+      "matches": [
+        "https://github.com/*"
+      ]
+    }
+  ],
+  "description": "Add a splash of SHA-based colour to GitHub repo pages.",
+  "icons": {},
+  "manifest_version": 2,
+  "name": "Colour My Repo",
+  "permissions": [
+    "https://api.github.com/",
+    "storage",
+    "tabs"
+  ],
+  "short_name": "colour-my-repo",
+  "version": "0.0.0"
+}
