@@ -2,14 +2,18 @@ import kotlin.browser.document
 import kotlin.browser.window
 import org.w3c.dom.Element
 import org.w3c.dom.HTMLElement
+import org.w3c.dom.events.Event
 
 fun main() {
     // Run the function after a second to ensure the page has fully loaded
-    window.setTimeout({ get_sha(window.location.pathname.substring(1)) }, 1000)
+    window.setTimeout({ getSha(window.location.pathname.substring(1)) }, 1000)
+
+    // Since GitHub uses pjax, we're gonna also link get_sha to an event related to pjax loads
+    document.body!!.addEventListener("pjax:complete", { main() })
 }
 
 // Get the commit sha for the given repo (given that we know it's a repo now)
-fun get_sha(loc: String) {
+fun getSha(loc: String) {
     // Start by trying to find the url to the latest commit in the top of the page
     // We can do this by doing a search through all a tags with "Link--primary" in the class
     // Then searching for the first one that has a url matching the given regex pattern
@@ -35,6 +39,7 @@ fun get_sha(loc: String) {
         console.log("colour-my-repo: no sha found, exiting")
         return
     }
+    console.log("colour-my-repo: repo colour: #$sha")
 
     // Now we need to render
     render(sha)
