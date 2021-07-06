@@ -12,11 +12,11 @@
         "./content.js"
       ],
       "matches": [
-        "https://github.com/*"
+        "https://github.com/*/*"
       ]
     }
   ],
-  "description": "Add a splash of SHA-based colour to GitHub repo pages.",
+  "description": "Add a splash of SHA-based colour to GitHub repository pages.",
   "icons": {},
   "manifest_version": 2,
   "name": "Colour My Repo",
