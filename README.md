@@ -11,6 +11,10 @@ When the extension detects that you are on a repository homepage, it will grab t
 
 ## How to Install
 
-Currently you can clone the repo, build the JS and load it as a temp extension in your browser.
+Currently you can clone the repo, build the JS and load it as a temp extension in your browser;
 
-I need an extension icon before I can upload it to a store, I think anyway... I'll look into it!
+1. Clone the repo, or download the source code
+2. Ensure that at the very least, a java installation is present on your computer
+3. Run `npm` install to install uglifyjs, which mangles the transpiled javascript
+4. Run `bash build.sh` which should have the local gradlew script compile the kotlin source and then mangle it via uglifyjs
+5. Install the add on locally into your browser, by selecting the `manifest.json` file in the `dist/` directory
