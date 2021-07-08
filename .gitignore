@@ -129,3 +129,6 @@ gradle-app.setting
 
 # Ignore dist JS files
 dist/*.js
+
+# Node Modules
+node_modules
